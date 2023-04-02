@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&family=Mr+Dafoe&display=swap');
+
+
+body {
+    background-color: aliceblue;
+    color: #000;
+    font-size: 10px;
+    /* padding: 10px;    */
+}
+.container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    /* padding-left: 30px; */
+    /* padding-left: 0 50px 20px 0; */
+    /* background-color: blue; */
+}
+.main-card {
+    /* position: absolute; */
+    top: 50px;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-bottom: 10px;
+    /* background-color: aqua; */
+}
+
+
+.card-text {
+    padding-left: 20px;
+}
+
+.location-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.loaction-link {
+    text-decoration: underline;
+    color: #918E9B;
+    font-family: 'inter';
+}
+
+.card-img {
+    /* height: 100%;
+    width: auto;
+     */
+     width: 220px;
+     height: 260px;
+     border-radius: 10px;
+}
+
+.country-name {
+    font-family: 'inter';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    color: #2B283A;
+    line-height: 12px;
+    letter-spacing: 0.17em;
+    align-items: center;    
+}
+.location-name {
+    margin-top: 5ox;
+}
+
+.description {
+    color: #2B283A;
+    /* line-height: 150%; */
+    font-weight: 400;
+    font-family: 'inter';
+    font-size: 10px;
+    
+}
+
+/* NavBar */
+
+nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  .site-name {
+    font-size: 10px;
+    font-family: 'inter';
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+        width: 100%;
+        height: 50px;
+        flex-wrap: wrap;
+        /* display: flex;
+        justify-content: space-between; */
+        align-items: center;
+        padding-left: 5px;
+        background-color: bisque;
+        border-radius: 3px;
+    }
+    .nav-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 93%;
+    }
+    .site-name {
+        font-size: 10px;
+        font-family: 'inter';
+        font-weight: bold;
+    }
+    .my{
+        font-family: 'Mr Dafoe';
+        color: #918E9B;
+
+    }
+    .logo-surfix {
+        color: crimson;
+    }
+    .menu-logo {
+        width: 55px;
+        height: 40px;
+
+    }
+    .container {
+        height: 200px;
+    }
+    .main-card{
+        height: 200px;
+    }
+    .card-img {
+         width: 120px;
+         height: 160px;
+         border-radius: 10px;
+    }
+    .description {
+        /* white-space: nowrap; */
+        /* overflow: hidden; */
+        text-overflow: ellipsis;
+        overflow-wrap: break-word;
+    }
+    
+    /* .main-card {
+        flex-direction: column;
+        margin: auto;
+    } */
+  }
